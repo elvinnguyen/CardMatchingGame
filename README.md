@@ -71,7 +71,7 @@ Go to **Run -> Edit Configurations -> VM Options** and add:
 
 ## Known Issues
 - There is no way to pause the game, we will introduce a system that will allow the player to pause the game  
-- The user cannot adjust his timer, right now the only way to adjust the times is through changing the code in FXMemoryGame.java
+- The user cannot adjust the timer. Right now the only way to adjust the times is through changing the code in FXMemoryGame.java
 - There are no sound effects for getting a matching pair or wrong pair.  
 
 ---
