@@ -36,4 +36,4 @@ These structures provide quick access and are easy to manage for small grids.
 - We would add a system to pause the game
 - A difficulty slider where you could adjust how much time you have and how long the cards stay flipped before turning over.
 - Sound effects for matched cards and unmatched cards.
--Some form of leaderboard or a personal ranking system
+- A Reset game button

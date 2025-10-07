@@ -43,7 +43,8 @@ Go to **Run -> Edit Configurations -> VM Options** and add:
 - If they don’t match, they flip back after a short delay.
 - Each match increases your score.
 - You have a time limit to find all pairs.
-- When the timer hits 0, and you haven't found all pairs the game ends, and you lose.
+- When the timer hits 0, and you haven't found all pairs, the game ends, and you lose.
+- Upon winning, your time left will be saved, and your score will be added to a leaderboard under a given name
 
 ---
 
@@ -57,6 +58,8 @@ Go to **Run -> Edit Configurations -> VM Options** and add:
 | **Countdown Timer** | A timer that counts down while you're playing |
 | **MVC Architecture** | Separation between model, controller, and view |
 | **Game Win/Lose Conditions** | Detects when all pairs are matched or time runs out |
+| **Leaderboard** | Saves your time left to a leaderboard of the top 10 scores |
+
 
 ---
 
@@ -78,3 +81,6 @@ Go to **Run -> Edit Configurations -> VM Options** and add:
 
 ## External Libraries
 **JavaFX SDK 25** — used for GUI rendering, animations, and user interaction.
+
+## Demo Video
+https://drive.google.com/file/d/1MTqfb0e36MZNC1ZeD_8qxYJpNOGYE91U/view?usp=sharing
