@@ -81,3 +81,6 @@ Go to **Run -> Edit Configurations -> VM Options** and add:
 
 ## External Libraries
 **JavaFX SDK 25** — used for GUI rendering, animations, and user interaction.
+
+## Demo Video
+https://drive.google.com/file/d/1MTqfb0e36MZNC1ZeD_8qxYJpNOGYE91U/view?usp=sharing
