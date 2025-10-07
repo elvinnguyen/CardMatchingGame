@@ -29,6 +29,7 @@ public class GameController {
     public void startTimer(Label timerLabel, int startSeconds) {
         if (timeline != null) {
             timeline.stop();
+            timeline = null;
         }
         timeSeconds = startSeconds;
         timerLabel.setText("Time: " + timeSeconds);
@@ -39,12 +40,26 @@ public class GameController {
                     timerLabel.setText("Time: " + timeSeconds);
                     if (timeSeconds <= 0) {
                         timeline.stop();
+                        timeSeconds = 0; // clamp to 0 to avoid negative values
                         timeUp();
                     }
                 })
         );
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
+    }
+
+    /** Stop the timer cleanly without firing timeUp(). */
+    public void stopTimer() {
+        if (timeline != null) {
+            timeline.stop();
+            timeline = null;
+        }
+    }
+
+    /** Returns the remaining time in seconds (never negative). */
+    public int getTimeLeft() {
+        return Math.max(0, timeSeconds);
     }
 
     public void setOnTimeUp(Runnable action) {
